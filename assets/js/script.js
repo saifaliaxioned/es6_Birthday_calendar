@@ -1,5 +1,5 @@
 //Birthday object created
-const birthdayObj = [
+let birthdayObj = [
   {
     "name": "ahsan ansari",
     "birthday": "10/02/1978"
@@ -71,6 +71,11 @@ const birthList = document.querySelectorAll('.birth-names'),
 
 // adding json data in textarea
 textarea.value = objJson;
+
+textarea.addEventListener('change',()=>{
+  birthdayObj = JSON.parse(textarea.value);
+
+});
 
 const blank = () => {
   birthList.forEach(li => {
