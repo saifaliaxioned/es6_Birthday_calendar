@@ -22,11 +22,11 @@ const birthdayObj = [
   },
   {
     "name": "omkar valve",
-    "birthday": "05/29/2000"
+    "birthday": "11/15/2022"
   },
   {
     "name": "ruby mary",
-    "birthday": "11/15/2022"
+    "birthday": "11/22/2022"
   },
   {
     "name": "nilesh pawar",
