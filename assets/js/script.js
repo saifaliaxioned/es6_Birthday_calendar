@@ -93,7 +93,7 @@ form.addEventListener('submit', (e) => {
 const birthDate = (dateInput) => {
   const date = new Date();
   let arr = [];
-  // function to get same year objects
+  // loop to get same year objects
   birthdayObj.forEach(obj => {
     const [month, day, bYear] = obj.birthday.split('/');
     if (Number(dateInput) === Number(bYear)) {
@@ -108,7 +108,7 @@ const birthDate = (dateInput) => {
     return c - d;
   });
 
-  // function to add filtered data in days
+  // loop to add filtered data in days
   arr.forEach(obj => {
     const [month, day, bYear] = obj.birthday.split('/');
     const [fLetter, lLetter] = obj.name.split(' ');
