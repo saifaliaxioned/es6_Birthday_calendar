@@ -186,19 +186,20 @@ form {
   height: 100%;
 }
 
-.year-input,.input-group {
+.input-content,.input-group {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.input-group input {
-  padding: 10px;
+.input-group input { padding: 10px; }
+
+.input-group label {
+  color: #6F7D88;
+  text-transform: capitalize;
 }
 
-.input-control {
-  margin-top: 20px;
-}
+.input-control { margin-top: 20px; }
 
 .submit {
   padding: 15px 25px;
