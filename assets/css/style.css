@@ -191,6 +191,18 @@ form {
 }
 
 .hide-content { display: none; }
+
+.submit {
+  padding: 15px 25px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  background-color: #0286EF;
+  color: #CEE6FB;
+  font-size: 17px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 /*=================================
   main styling ends here
 =================================*/
