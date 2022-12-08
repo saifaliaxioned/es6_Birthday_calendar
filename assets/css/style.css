@@ -151,7 +151,7 @@ body { background-color: #EBF0F2; }
   height: 100%;
   display: flex;
   flex-wrap: wrap;
-  border: 1px solid rgb(122, 121, 121);
+  border: 1px solid #aca8a8;
   border-top: none;
 }
 
@@ -212,7 +212,8 @@ form {
   font-weight: bold;
   text-transform: uppercase;
 }
-.hide-content { display: none; }
+
+.birth-names .dummy-list { display: none; }
 /*=================================
   main styling ends here
 =================================*/
