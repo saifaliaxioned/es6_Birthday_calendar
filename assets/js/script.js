@@ -1,5 +1,5 @@
 //Birthday object created
-const birthdayObj = [
+let birthdayObj = [
   {
     "name": "ahsan ansari",
     "birthday": "10/02/1978"
@@ -72,6 +72,11 @@ const birthList = document.querySelectorAll('.birth-names'),
 // adding json data in textarea
 textarea.value = objJson;
 
+textarea.addEventListener('change',()=>{
+  birthdayObj = JSON.parse(textarea.value);
+
+});
+
 const blank = () => {
   birthList.forEach(li => {
     li.innerHTML = '';
@@ -88,7 +93,7 @@ form.addEventListener('submit', (e) => {
 const birthDate = (dateInput) => {
   const date = new Date();
   let arr = [];
-  // function to get same year objects
+  // loop to get same year objects
   birthdayObj.forEach(obj => {
     const [month, day, bYear] = obj.birthday.split('/');
     if (Number(dateInput) === Number(bYear)) {
@@ -103,7 +108,7 @@ const birthDate = (dateInput) => {
     return c - d;
   });
 
-  // function to add filtered data in days
+  // loop to add filtered data in days
   arr.forEach(obj => {
     const [month, day, bYear] = obj.birthday.split('/');
     const [fLetter, lLetter] = obj.name.split(' ');
