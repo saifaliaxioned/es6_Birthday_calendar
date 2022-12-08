@@ -1,4 +1,4 @@
-//object created
+//Birthday object created
 const birthdayObj = [
   {
     "name": "ahsan ansari",
@@ -94,6 +94,13 @@ const birthDate = (dateInput) => {
     if (Number(dateInput) === Number(bYear)) {
       arr.push(obj);
     }
+  });
+
+  // sort date order wise
+  arr.sort((a, b) => {
+    let c = new Date(a.birthday);
+    let d = new Date(b.birthday);
+    return c - d;
   });
 
   // function to add filtered data in days
