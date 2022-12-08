@@ -173,6 +173,7 @@ body { background-color: #EBF0F2; }
 
 form {
   display: flex;
+  gap: 30px;
 }
 
 .json-data {
@@ -185,12 +186,19 @@ form {
   height: 100%;
 }
 
-.input-group {
+.year-input,.input-group {
   display: flex;
   flex-direction: column;
+  gap: 10px;
 }
 
-.hide-content { display: none; }
+.input-group input {
+  padding: 10px;
+}
+
+.input-control {
+  margin-top: 20px;
+}
 
 .submit {
   padding: 15px 25px;
@@ -203,6 +211,7 @@ form {
   font-weight: bold;
   text-transform: uppercase;
 }
+.hide-content { display: none; }
 /*=================================
   main styling ends here
 =================================*/
